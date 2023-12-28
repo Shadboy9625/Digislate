@@ -1,5 +1,9 @@
+const withPWA = require("next-pwa")({
+  dest: "public",
+});
+
 /** @type {import('next').NextConfig} */
-module.exports = {
+module.exports = withPWA({
   typescript: {
     // !! WARN !!
     // Dangerously allow production builds to successfully complete even if
@@ -9,4 +13,4 @@ module.exports = {
   },
 
   reactStrictMode: true,
-};
+});

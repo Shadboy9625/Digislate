@@ -14,6 +14,7 @@ const App = ({ Component, pageProps }: AppProps) => {
       <Head>
         <title>Digislate | Online White/Black Board</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="manifest" href="/maninfest.json" />
       </Head>
       <RecoilRoot>
         <ToastContainer />
